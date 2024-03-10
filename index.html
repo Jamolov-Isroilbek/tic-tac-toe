@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="game-container" class="game-container">
+        <div id="status-action" class="status-action">
+            <p id="status-text">Player 1's turn</p>
+            <!-- Optional: Add a reset button if you want to be restart the game -->
+            <button id="reset-button">Restart</button>
+        </div>
+        <div id="game-board" class="board">
+            <!-- Use a loop in your JavaScript to generate these buttons dynamically -->
+            <button class="cell" data-cell-index="0"></button>
+            <button class="cell" data-cell-index="1"></button>
+            <button class="cell" data-cell-index="2"></button>
+            <button class="cell" data-cell-index="3"></button>
+            <button class="cell" data-cell-index="4"></button>
+            <button class="cell" data-cell-index="5"></button>
+            <button class="cell" data-cell-index="6"></button>
+            <button class="cell" data-cell-index="7"></button>
+            <button class="cell" data-cell-index="8"></button>
+            <!-- Repeat for all 9 cells, incrementing data-cell-index accordingly -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
